@@ -11,7 +11,8 @@ import CoreLocation
 
 struct WeatherManager {
     
-    let weatherURL = "https://api.openweathermap.org/data/2.5/weather?APPID=9671d5b7569a7cb9890e997cd49515de&units=metric"
+    let token = "SECRET_TOKEN"
+    let weatherURL = "https://api.openweathermap.org/data/2.5/weather?APPID=\(token)&units=metric"
     
     var delegate: WeatherManagerDelegate?
     
